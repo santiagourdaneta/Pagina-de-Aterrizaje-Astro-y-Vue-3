@@ -1,38 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
-
-interface Props {
-	title: string;
-	description: string;
-}
-
-const { title, description } = Astro.props;
----
-
-<!doctype html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content={description} />
-		<meta name="generator" content={Astro.generator} />
-		<meta property="og:title" content={title} />
-		<meta property="og:description" content={description} />
-		<title>{title}</title>
-		<ViewTransitions />
-		<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PN2TSB43');</script>
-<!-- End Google Tag Manager -->
-	</head>
-	<body class="min-h-screen bg-gray-50 text-gray-900">
-		<slot />
-		---
-// src/layouts/Layout.astro
-import { ViewTransitions } from 'astro:transitions';
+import '../styles/global.css'; // Asegúrate de que esta línea esté presente para los estilos de Tailwind
 
 interface Props {
   title: string;
@@ -41,6 +9,7 @@ interface Props {
 
 const { title, description } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -52,22 +21,20 @@ const { title, description } = Astro.props;
     <meta property="og:description" content={description} />
     <title>{title}</title>
     <ViewTransitions />
-
+    
     <script>
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-PN2TSB43'); 
+      })(window,document,'script','dataLayer','GTM-PN2TSB43'); // ¡REEMPLAZA 'YOUR_GTM_ID' CON TU ID REAL!
     </script>
     </head>
   <body class="min-h-screen bg-gray-50 text-gray-900">
     <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN2TSB43" 
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN2TSB43"
         height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <slot />
   </body>
-</html>
-	</body>
 </html>

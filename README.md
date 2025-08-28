@@ -1,46 +1,40 @@
-# Astro Starter Kit: Basics
+# 🚕 TaxiGo: Your Smart Taxi Service
 
-```sh
-npm create astro@latest -- --template basics
-```
+![TaxiGo App Screenshot](https://via.placeholder.com/800x400.png?text=TaxiGo+App+Screenshot)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📝 Descripción
 
-## 🚀 Project Structure
+Página de Aterrizaje Optimizada de **TaxiGo** una aplicación de servicio de taxis que conecta a pasajeros con conductores cercanos de forma rápida y eficiente. Este proyecto demuestra una arquitectura de frontend moderna, optimización de rendimiento y una integración robusta con servicios de terceros.
 
-Inside of your Astro project, you'll see the following folders and files:
+## ✨ Características Destacadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+* **Página de Aterrizaje Optimizada**: Desarrollada con **Astro** y **Vue 3** para un rendimiento ultra-rápido y una excelente calificación de SEO.
+* **Formulario de Captura de Leads**: Un flujo conversacional optimizado para convertir visitantes en usuarios potenciales.
+* **Sistema de Diseño**: Componentes reutilizables (`Button`, `Input`) para una consistencia visual y un desarrollo escalable.
+* **Analíticas Avanzadas**: Implementación de eventos personalizados y etiquetas con **Google Tag Manager**, **Google Analytics 4** y otros píxeles de marketing para un seguimiento preciso.
+* **Código Limpio y Colaborativo**: Uso de un flujo de trabajo de Git profesional con ramas de funciones y Pull Requests.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🚀 Instalación y Uso
 
-## 🧞 Commands
+1.  Clona el repositorio:
+    ```bash
+    git clone https://github.com/santiagourdaneta/Pagina-de-Aterrizaje-Astro-y-Vue-3
+    cd Pagina-de-Aterrizaje-Astro-y-Vue-3
+    ```
+2.  Instala las dependencias:
+    ```bash
+    npm install
+    ```
+3.  Crea un archivo `.env` en la raíz del proyecto y añade tus variables de entorno (por ejemplo, claves de API).
+4.  Inicia el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
 
-All commands are run from the root of the project, from a terminal:
+## 🤝 Contribuciones
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, por favor, sigue el flujo de trabajo de Git con ramas de funciones y Pull Requests.
 
-## 👀 Want to learn more?
+## 📄 Licencia
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto está bajo la Licencia MIT.
