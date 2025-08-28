@@ -1,7 +1,5 @@
 # 🚕 TaxiGo: Your Smart Taxi Service
 
-![TaxiGo App Screenshot](https://via.placeholder.com/800x400.png?text=TaxiGo+App+Screenshot)
-
 ## 📝 Descripción
 
 Página de Aterrizaje Optimizada de **TaxiGo** una aplicación de servicio de taxis que conecta a pasajeros con conductores cercanos de forma rápida y eficiente. Este proyecto demuestra una arquitectura de frontend moderna, optimización de rendimiento y una integración robusta con servicios de terceros.
