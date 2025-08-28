@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.vue';
+import FormularioContacto from '../components/FormularioContacto.vue';
+import { Image } from 'astro:assets';
+import heroImage from '../assets/hero.jpg';
+
+const pageTitle = 'Tu Fábrica de Juguetes Mágicos';
+const pageDescription = 'Crea juguetes personalizados con ideas mágicas. ¡Transforma tus sueños en realidad!';
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+	<header class="bg-gray-800 text-white py-6">
+		<nav class="container mx-auto flex justify-between items-center px-4">
+			<h1 class="text-3xl font-bold">Fábrica Mágica</h1>
+			<a href="#contacto" class="hidden sm:inline-block">
+				<Button variant="secondary">Contáctanos</Button>
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="relative h-[60vh] flex items-center justify-center text-center text-white p-4">
+			<Image src={heroImage} alt="Magic factory hero image" class="absolute inset-0 w-full h-full object-cover z-0" />
+			<div class="relative z-10">
+				<h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
+					La imaginación es el único límite
+				</h2>
+				<p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+					Transforma tus ideas más locas en juguetes reales con nuestra tecnología mágica de fabricación.
+				</p>
+				<a href="#contacto">
+					<Button variant="primary">¡Empieza a crear!</Button>
+				</a>
+			</div>
+		</section>
+
+		<section id="contacto" class="container mx-auto my-12 p-4">
+			<div class="grid md:grid-cols-2 gap-8 items-center">
+				<div class="text-center md:text-left">
+					<h2 class="text-3xl font-bold mb-4">¿Tienes una idea?</h2>
+					<p class="text-lg text-gray-700">
+						Estamos listos para hacerla realidad. Llena el formulario y te contactaremos para darle vida a tu proyecto.
+					</p>
+				</div>
+				<div class="flex justify-center">
+					<FormularioContacto client:load />
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="bg-gray-800 text-white py-6 mt-12">
+		<div class="container mx-auto text-center">
+			<p>&copy; 2025 Fábrica Mágica. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+/* Aquí puedes agregar estilos específicos para la página si es necesario */
+</style>
